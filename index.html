@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>引用组件的方式使用vue</title>
+    <script src="./static/sea/sea.js"></script>
+    <script src="./static/sea/seajs-text.js"></script>
+    <script src="./static/vue/vue2.6.11.js"></script>
+    <script src="./static/vue/vue-router.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <router-view></router-view>
+    </div>
+    <script type="text/javascript">
+        seajs.use('./app.js');
+    </script>
+</body>
+
+</html>
